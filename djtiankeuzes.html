@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="djtiankeuzes.css">
+  <title>Vragenlijst</title>
+</head>
+<body>
+<br>
+  <div class="container">
+    <h1>Vragenlijst</h1>
+    <form id="questionForm">
+      <!-- Meerkeuzevraag -->
+      <div class="question">
+        <label>Vraag 1: Wat is je favoriete kleur?</label>
+        <div class="text-block">
+		<input type="checkbox" name="color" value="rood"> Rood
+		</div>
+		<div class="text-block">
+		<input type="checkbox" name="color" value="rood"> Rood
+		</div>
+		
+	
+      </div>
+
+      <!-- Open vraag -->
+      <div class="question">
+        <label>Vraag 2: Wat is je favoriete vakantiebestemming?</label>
+        <input type="text" name="destination" required>
+      </div>
+
+      <!-- Vraag met dropdown menu -->
+      <div class="question">
+        <label>Vraag 3: Welk dier vind je het leukst?</label>
+        <select name="animal">
+          <option value="hond">Hond</option>
+          <option value="kat">Kat</option>
+          <option value="vogel">Vogel</option>
+        </select>
+      </div>
+
+      <!-- Vraag voor een datum -->
+      <div class="question">
+        <label>Vraag 4: Wanneer ben je jarig?</label>
+        <input type="date" name="birthdate" required>
+      </div>
+
+      <!-- Vraag voor een tijd -->
+      <div class="question">
+        <label>Vraag 5: Hoe laat sta je gewoonlijk op?</label>
+        <input type="time" name="wakeuptime" required>
+      </div>
+
+      <!-- Open vraag -->
+      <div class="question">
+        <label>Vraag 6: Wat is je favoriete boek?</label>
+        <textarea name="favoriteBook" rows="4" required></textarea>
+      </div>
+
+      <button type="button" onclick="submitForm()">Verzenden</button>
+    </form>
+  </div>
+
+  <script src="djtiankeuzes.js"></script>
+</body>
+</html>
